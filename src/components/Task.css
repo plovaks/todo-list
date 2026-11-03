@@ -1,0 +1,66 @@
+.task-container {
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 500px;
+    margin: 0.5rem 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s ease;
+}
+
+.task-container:hover {
+    border-color: #b0b0b0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.input-value {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #333333;
+    flex-grow: 1;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.delete-task-btn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.delete-task-btn:hover {
+    background-color: #ffebee;
+}
+
+.delete-task-btn:hover svg path {
+    stroke: #d32f2f;
+}
+
+.task-container input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #4caf50; /
+}
+
+.task-container.completed {
+    background-color: #f9f9f9;
+    border-color: #e0e0e0;
+    opacity: 0.6;
+}
+
+.task-container.completed .input-value {
+    text-decoration: line-through;
+    color: #888888;
+}
